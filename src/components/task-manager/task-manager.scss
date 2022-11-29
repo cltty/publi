@@ -1,0 +1,30 @@
+@import '../../styles/variables';
+
+.task-manager {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  width: 70%;
+  margin-inline: auto;
+  border-radius: $spacing-4;
+}
+
+.tasks-container {
+  display: flex;
+  flex-direction: column;
+
+  task-row {
+    padding: $spacing-20;
+
+    &:hover {
+      box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    }
+
+    &:nth-child(even) {
+      background-color: $white-2;
+    }
+  }
+}
+
+.no-content-container {
+  text-align: center;
+  padding: $spacing-20;
+}

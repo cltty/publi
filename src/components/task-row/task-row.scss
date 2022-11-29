@@ -1,0 +1,8 @@
+@import '../../styles/variables';
+
+.task-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  padding: $spacing-15;
+  justify-items: center;
+}
